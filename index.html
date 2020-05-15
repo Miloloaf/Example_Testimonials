@@ -29,32 +29,25 @@
         margin-left: 10%;
         display: flex;
         justify-content: center;
-
+        position: relative;
     }
+
     #box{
-        position: fixed;
-        /* bottom: 316px;
-        right: 590px; */
         height:400px;
-        width:515px;
-        top: 40%;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        opacity: 1;
-        border: 1px solid black;
+        width:500px;
         background-color: rgba(218, 218, 218, 0.5);
+        border: 1px solid black;
+        margin-top: 400px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .container{
-        height:400px;
-        width:500px;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 60%;
-        margin-bottom: 10%;
-        padding-left: 10%;
-        padding-right: 10%;
+        height: 400px;
+        width: 450px;
+
         color: black;
         align-items: center;
         justify-content: center;
@@ -63,6 +56,7 @@
         position: relative;
         opacity: 1;
         transition: 0.4s ease-out;
+        
     }
 
     .collapsed{
@@ -106,29 +100,23 @@
         display: flex;
         justify-content: space-between;
         height: 70px;
-        width:115%;
-        position: absolute;
+        width:600px;
+        position: fixed;
+
+
     }
 
     button{
         font-size: 20px;
         background-color: rgba(146, 146, 146, 0.212);
         border-radius: 30%;
-        padding: 0 1%;
         height: 70px;
         border: 1px solid rgb(80, 80, 80);
         cursor: pointer;
-        position:absolute;
+
 
     }
 
-    #navLeft{
-        left: -40px
-    }
-
-    #navRight{
-        right: 40px
-    }
 
 </style>
 
@@ -144,13 +132,11 @@
             <div class="navContainer">
                 <button onclick="navPrevious()" id="navLeft"><</button>
                 <button onclick="navNext()" id="navRight">></button>
-            </div>  
-
         </div>
+
         <div class="container testimonial" id="testContainer">
             <h1> Testimonials</h1>
             <image class="pic" id="pic"></image>
-  
             <p class="name" id="testimonialName">Sarah</p>
             <div class="ratingsCollection">
                 <i class="fas fa-star ratings" rating="1"></i>
